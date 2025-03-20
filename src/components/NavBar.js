@@ -14,6 +14,13 @@ function Navbar() {
                     className="inactive navlink"
                     activeClassName="active"
                 >
+                    Main
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
                     Publications
                 </NavLink>
             </div>

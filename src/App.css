@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.publications-title {
+    font-size: 4em;
+}
+
 .publications-container {
     width: 70%;
     padding: 20px;
@@ -62,33 +66,36 @@
 
 .publications-grid {
     display: grid;
-    grid-template-columns: 0.5fr 3fr; /* Year takes 1/3, List takes 2/3 */
-    gap: 20px;
-}
-
-.publication-row {
-    display: contents; /* Allows each row to properly align in the grid */
+    grid-template-columns: 0.5fr 3fr; /* 1/3 for year, 2/3 for content */
+    gap: 10px;
+    align-items: center;
 }
 
 .publication-year {
     font-size: 2em;
     font-weight: bold;
-    text-align: right;
-    padding-right: 20px;
+    text-align: left; /* Align year to the left */
+    padding-left: 20px; /* Add spacing from the left edge */
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.publication-year:hover {
+    color: grey;
 }
 
 .publication-content {
     font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0.5vh;
 }
 
-li {
-    margin-bottom: 1em; /* Add margin below each list item */
-    font-size: 18px; /* Optional: Adjust font size for better spacing */
-    line-height: 1.5; /* Optional: Adjust line height to make text more readable */
-}
-
-ul {
-    list-style-type: none;
+.year-separator {
+    grid-column: span 2; /* Makes the line span across both columns */
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: grey;
+    margin: 10px 0;
 }

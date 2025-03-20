@@ -2,9 +2,13 @@ Set up file structure - done
 Set up routing - done
 Set up Navbar - done (functionally)
 Set up publisher - done (functionally)
-Make each year seperated
-Create Main page
+Make each year seperated - done
+Make each year have a drop down - done
+Make each link the whole text - done
+Create Main page and list things I need
 Fill Navbar out
+Create sign in, sign out
+Create features only logged in members can use
 
 ## Long Term
 
@@ -12,3 +16,7 @@ Learn mobile version
 
 ADD Publication feature
 Update Publication feature
+
+Main
+Picture
+Biography

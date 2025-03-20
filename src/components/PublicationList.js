@@ -852,6 +852,7 @@ const PublicationList = () => {
             link: "",
         },
     ]);
+    const [openYears, setOpenYears] = useState({});
 
     useEffect(() => {
         // Sort the publications array by year when the component mounts
@@ -859,40 +860,71 @@ const PublicationList = () => {
             (a, b) => b.year - a.year
         );
         setPublications(sortedPublications);
+
+        // Open all years by default
+        const initialOpenYears = {};
+        sortedPublications.forEach((pub) => {
+            initialOpenYears[pub.year] = true; // Set all years to open
+        });
+        setOpenYears(initialOpenYears);
     }, []);
+
+    // Function to toggle visibility of publications for a specific year
+    const toggleYear = (year) => {
+        setOpenYears((prev) => ({
+            ...prev,
+            [year]: !prev[year], // Toggle state for this year
+        }));
+    };
 
     return (
         <div className="publications-container">
-            <div className="publications-grid">
-                {publications.map((publication, index) => {
-                    const showYear =
-                        index === 0 ||
-                        publication.year !== publications[index - 1].year;
+            {publications.map((publication, index) => {
+                const showYear =
+                    index === 0 ||
+                    publication.year !== publications[index - 1].year;
 
-                    return (
-                        <div
-                            key={publication.id || index}
-                            className="publication-row"
-                        >
-                            {/* Show the year only when it changes */}
-                            <div className="publication-year">
-                                {showYear ? publication.year : ""}
-                            </div>
-
-                            <div className="publication-content">
-                                {publication.content}{" "}
-                                <a
-                                    href={publication.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                return (
+                    <div
+                        key={publication.id || index}
+                        className="publication-group"
+                    >
+                        {/* Year Header (Clickable to Toggle) */}
+                        {showYear && (
+                            <>
+                                <div
+                                    className="publication-year"
+                                    onClick={() => toggleYear(publication.year)}
                                 >
-                                    {publication.link}
-                                </a>
+                                    {publication.year}{" "}
+                                    {openYears[publication.year] ? "▲" : "▼"}
+                                </div>
+                                <hr className="year-separator" />
+                            </>
+                        )}
+
+                        {/* Grid layout for content */}
+                        {openYears[publication.year] && (
+                            <div className="publications-grid">
+                                <div className="publication-placeholder"></div>
+                                <div className="publication-content">
+                                    {publication.link ? (
+                                        <a
+                                            href={publication.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {publication.content}
+                                        </a>
+                                    ) : (
+                                        publication.content
+                                    )}
+                                </div>
                             </div>
-                        </div>
-                    );
-                })}
-            </div>
+                        )}
+                    </div>
+                );
+            })}
         </div>
     );
 };
