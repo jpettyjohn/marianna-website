@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.publications-main {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NAVBAR STYLING */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-name {
+    font-size: 2cqmax;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navlink-container {
+    display: flex;
+    gap: 1.5em;
+    padding-right: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+.navlink {
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-logo-container {
+    padding-left: 10em;
+}
+
+.navbar-logo {
+    width: 6vw;
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover;
+}
+
+.navlink:hover {
+    color: #1a73e7;
+    cursor: pointer;
+}
+
+/* Publications Styling */
+.publications-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.publications-container {
+    display: flex;
+    width: 50vw;
+    gap: 50vw;
+}
+
+li {
+    margin-bottom: 1em; /* Add margin below each list item */
+    font-size: 18px; /* Optional: Adjust font size for better spacing */
+    line-height: 1.5; /* Optional: Adjust line height to make text more readable */
 }
