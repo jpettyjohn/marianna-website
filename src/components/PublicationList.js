@@ -862,22 +862,37 @@ const PublicationList = () => {
     }, []);
 
     return (
-        <div>
-            <ul>
-                {publications.map((publication, index) => (
-                    <li key={index}>
-                        {publication.content}
-                        <span> </span>
-                        <a
-                            href={publication.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+        <div className="publications-container">
+            <div className="publications-grid">
+                {publications.map((publication, index) => {
+                    const showYear =
+                        index === 0 ||
+                        publication.year !== publications[index - 1].year;
+
+                    return (
+                        <div
+                            key={publication.id || index}
+                            className="publication-row"
                         >
-                            {publication.link}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+                            {/* Show the year only when it changes */}
+                            <div className="publication-year">
+                                {showYear ? publication.year : ""}
+                            </div>
+
+                            <div className="publication-content">
+                                {publication.content}{" "}
+                                <a
+                                    href={publication.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {publication.link}
+                                </a>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     );
 };
