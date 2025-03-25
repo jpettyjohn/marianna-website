@@ -4,6 +4,7 @@ import Publications from "./pages/Publications";
 import Main from "./pages/Main";
 import Navbar from "./components/NavBar";
 import "./App.css";
+//import "./css/App.scss";
 
 function App() {
     return (

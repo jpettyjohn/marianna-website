@@ -7,7 +7,9 @@ function Navbar() {
             {/* <div className='navbar-logo-container'>
                 <img class="navbar-logo" src={Image} alt="This is me"></img>
             </div> */}
-            <div class="navbar-name">Marianna Polak</div>
+            <div class="navbar-name">
+                <strong>Marianna Polak</strong>
+            </div>
             <div class="navlink-container">
                 <NavLink
                     to="/"
@@ -22,6 +24,48 @@ function Navbar() {
                     activeClassName="active"
                 >
                     Publications
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Collaborations
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Research
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Teaching
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Team
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Alumni
+                </NavLink>
+                <NavLink
+                    to="/publications"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Lab
                 </NavLink>
             </div>
         </div>
