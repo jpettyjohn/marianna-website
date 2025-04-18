@@ -2,12 +2,13 @@
     --font-base: 1rem; /* Assuming 1rem = 16px */
     --font-small: calc(var(--font-base) / 1.618); /* ≈ 0.618rem */
     --font-medium: var(--font-base); /* 1rem */
+    --font-xmedium: calc((var(--font-medium) + var(--font-large)) / 2);
     --font-large: calc(var(--font-base) * 1.618); /* ≈ 1.618rem */
     --font-xlarge: calc(var(--font-large) * 1.618); /* ≈ 2.618rem */
     --font-xxlarge: calc(var(--font-xlarge) * 1.618); /* ≈ 4.236rem */
 
     --primary-color: #333333;
-    --secondary-color: #539bd6;
+    --secondary-color: #50b5e4;
     --standard-white: #ffffff;
     --standard-light-grey: #e5e5e5;
     --standard-dark-blue: #1c3d5a;
@@ -35,7 +36,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: 0 1vw;
+    height: 3vw;
     background-color: var(--primary-color);
 }
 
@@ -48,87 +50,24 @@
 
 .navlink-container {
     display: flex;
-    gap: 1.5em;
-    padding-right: 5em;
+    padding-right: 2em;
+    height: 100%;
 }
 
 .navlink {
     font-style: normal;
     text-decoration: none;
     color: var(--standard-white);
-    font-size: var(--font-large);
-}
-
-.navbar-logo-container {
-    padding-left: 10em;
-}
-
-.navbar-logo {
-    width: 6vw;
-    height: auto;
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover;
+    font-size: var(--font-xmedium);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.4em;
+    transition: background 0.3s ease-in-out;
 }
 
 .navlink:hover {
     color: var(--standard-white);
     background: var(--secondary-color);
     cursor: pointer;
-}
-
-/* Publications Styling */
-.publications-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.publications-title {
-    font-size: var(--font-xlarge);
-}
-
-.publications-container {
-    width: 60%;
-    display: block;
-}
-
-.publications-grid {
-    display: grid;
-    grid-template-columns: 0.4fr 3fr; /* First column for the year, second for the content */
-    align-items: start;
-    gap: 0.1em;
-}
-
-.publication-year {
-    cursor: pointer;
-    font-size: var(--font-large);
-    grid-column: 1;
-    visibility: hidden; /* Hide when not needed but still take space */
-}
-
-.publication-content {
-    font-size: var(--font-medium);
-    grid-column: 2; /* Ensures content always stays in second column */
-    line-height: 1.6;
-    padding: 0.2em;
-    width: auto;
-}
-
-.publication-year:hover {
-    color: var(--standard-light-grey);
-}
-
-.year-separator {
-    grid-column: span 2; /* Makes the line span across both columns */
-    width: 100%;
-    border: none;
-    height: 1px;
-    background-color: var(--standard-light-grey);
-    margin: 10px 0;
-}
-
-.year-arrow {
-    font-size: var(--font-medium); /* Makes the arrow smaller */
-    margin-left: 3px; /* Adds spacing between year and arrow */
 }

@@ -40,7 +40,7 @@ function Navbar() {
                     Research
                 </NavLink>
                 <NavLink
-                    to="/publications"
+                    to="/teaching"
                     className="inactive navlink"
                     activeClassName="active"
                 >
