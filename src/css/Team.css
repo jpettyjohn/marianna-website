@@ -1,0 +1,11 @@
+.team-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team-main-container {
+    width: 50%;
+    margin: 4vh;
+}

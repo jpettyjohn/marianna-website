@@ -26,6 +26,20 @@ function Navbar() {
                     Publications
                 </NavLink>
                 <NavLink
+                    to="/teaching"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Teaching
+                </NavLink>
+                <NavLink
+                    to="/team"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Team
+                </NavLink>
+                {/* <NavLink
                     to="/publications"
                     className="inactive navlink"
                     activeClassName="active"
@@ -40,20 +54,6 @@ function Navbar() {
                     Research
                 </NavLink>
                 <NavLink
-                    to="/teaching"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Teaching
-                </NavLink>
-                <NavLink
-                    to="/publications"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Team
-                </NavLink>
-                <NavLink
                     to="/publications"
                     className="inactive navlink"
                     activeClassName="active"
@@ -66,7 +66,7 @@ function Navbar() {
                     activeClassName="active"
                 >
                     Lab
-                </NavLink>
+                </NavLink> */}
             </div>
         </div>
     );

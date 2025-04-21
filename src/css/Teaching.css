@@ -1,3 +1,53 @@
-.teaching-title {
-    font-size: var(--font-xlarge);
+.teaching-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.teaching-main-container {
+    width: 55%;
+    margin: 4vh;
+}
+
+.info-list {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.info-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.info-content {
+    font-size: 1rem;
+    color: #666;
+}
+
+.info-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-link:hover {
+    text-decoration: underline;
 }

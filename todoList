@@ -12,26 +12,32 @@ Fill Navbar out
 Create sign in, sign out
 Create features only logged in members can use
 
-## Long Term
-
-Learn mobile version
-
-ADD Publication feature
-Update Publication feature
-
 ## Main Tasks
 
--   Setup Proper css structure
-
--   Sample student page - emulate for the rest of the students
-    Team section
+-   Team page
+    Sample student
+    emulate for the rest of the students
 
 -   Teaching page
+    main strutuce - done
+    style better
+
+    -   dont like current cards\
+
+-   Theme (Bluish profresional)
 
 ## Secondary Tasks
 
-Color Scheme - bluish, not green
-Link after text in publicaton line not as a hyper link (publications)
+-   Color Scheme - bluish, not green
+-   Link after text in publicaton line not as a hyper link (publications)
+
+## Long Term
+
+-   Make mobile scaling
+
+-   ADD Publication feature
+-   Update Publication feature
+-   Setup backend for login
 
 ## Misc
 
@@ -40,6 +46,8 @@ Do you have a logo?
 -photo plus discriptors
 -email, socials, Office#, what she also wants
 -bio can be done on main page
+
+## Links
 
 publications
 titles first

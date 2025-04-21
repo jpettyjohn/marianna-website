@@ -7,17 +7,12 @@
 }
 
 .publications-main-container {
-    width: 40%;
+    width: 50%;
     margin: 4vh;
 }
 
-.publications-title {
-    font-size: var(--font-xlarge);
-    margin: 0;
-}
-
 .publications-container {
-    width: 60%;
+    width: 100%;
     display: block;
 }
 
@@ -51,7 +46,7 @@
     grid-column: span 2; /* Makes the line span across both columns */
     width: 100%;
     border: none;
-    height: 1px;
+    height: 2px;
     background-color: var(--standard-light-grey);
     margin: 10px 0;
 }

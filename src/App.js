@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
+import Team from "./pages/Team";
 import Main from "./pages/Main";
 import Navbar from "./components/NavBar";
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
                             element={<Publications />}
                         />
                         <Route path="/teaching" element={<Teaching />} />
+                        <Route path="/team" element={<Team />} />
                     </Routes>
                 </main>
             </div>

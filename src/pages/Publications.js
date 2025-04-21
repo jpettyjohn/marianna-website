@@ -5,12 +5,9 @@ function Publications() {
     return (
         <div className="publications-main">
             <div className="publications-main-container">
-                <h1 className="publications-title">Publications</h1>
-                <div className="publicaitons-description">
-                    *example description*
-                </div>
+                <h1 className="title">Publications</h1>
+                <PublicationList></PublicationList>
             </div>
-            <PublicationList></PublicationList>
         </div>
     );
 }

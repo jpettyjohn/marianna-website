@@ -14,6 +14,20 @@
     --standard-dark-blue: #1c3d5a;
 }
 
+/*COMMON UTILS*/
+.seperator {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: var(--standard-light-grey);
+    margin: 10px 0;
+}
+
+.title {
+    font-size: var(--font-xlarge);
+    margin: 1rem 0 0 0;
+}
+
 /*MAIN-STYLING*/
 .main-title-container {
     display: flex;
