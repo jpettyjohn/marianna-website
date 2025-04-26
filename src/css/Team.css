@@ -6,6 +6,75 @@
 }
 
 .team-main-container {
-    width: 50%;
+    width: 60%;
     margin: 4vh;
+}
+
+.team-list {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    height: 50%;
+}
+
+.team-card {
+    display: grid;
+    grid-template-columns: auto 1fr; /* image | content */
+    gap: 0.1rem;
+    height: 50%;
+}
+
+.team-card-image {
+    padding: 1rem;
+    height: 50%;
+}
+
+.team-card-image img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* Optional: makes sure it looks nice */
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    border: 1px solid #ccc;
+}
+
+.team-card-text {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.team-name {
+    margin: 0;
+    font-size: var(--font-large);
+    color: #333;
+}
+
+.team-occupation {
+    margin: 0;
+    font-size: var(--font-large);
+    font-weight: bold;
+}
+
+.team-content {
+    font-size: var(--font-medium);
+    color: var(--primary-text-color);
+    text-indent: 2em;
+}
+
+.team-additional {
+    margin-top: auto;
+}
+
+.team-link {
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.team-seperator {
+    grid-column: 1 / -1; /* span across all columns */
+    border: none;
+    height: 1px;
+    background-color: var(--standard-light-grey);
+    margin: 10px 0;
 }

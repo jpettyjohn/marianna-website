@@ -7,11 +7,36 @@
     --font-xlarge: calc(var(--font-large) * 1.618); /* ≈ 2.618rem */
     --font-xxlarge: calc(var(--font-xlarge) * 1.618); /* ≈ 4.236rem */
 
-    --primary-color: #333333;
-    --secondary-color: #50b5e4;
+    --primary-color: #2e5a88;
+    --primary-text-color: #333333;
+    --secondary-color: #7fa6c1;
     --standard-white: #ffffff;
-    --standard-light-grey: #e5e5e5;
-    --standard-dark-blue: #1c3d5a;
+    --standard-light-grey: #01065396;
+    --standard-dark-blue: #010753;
+    --color-muted: #6c757d;
+    --color-accent: #f2b632;
+    --standard-background: #000a6607;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-primary);
+}
+
+p,
+span,
+div {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--standard-background);
+}
+
+a {
+    color: var(--color-accent);
 }
 
 /*COMMON UTILS*/
@@ -33,12 +58,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--standard-dark-blue);
 }
 
 .main-title {
     font-size: var(--font-xlarge);
+    color: var(--standard-white);
 }
 
 .main-biography-container {
@@ -50,9 +77,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1vw;
+    padding: 0 1.5vw;
     height: 3vw;
-    background-color: var(--primary-color);
+    background-color: var(--standard-dark-blue);
 }
 
 .navbar-name {

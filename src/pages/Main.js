@@ -9,5 +9,10 @@ function Main() {
             </div>
         </div>
     );
+    /* 
+    ADD
+    - slideshow of mariannas best work
+    - add socials and other important links
+    */
 }
 export default Main;

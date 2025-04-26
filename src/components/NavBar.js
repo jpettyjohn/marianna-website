@@ -8,7 +8,7 @@ function Navbar() {
                 <img class="navbar-logo" src={Image} alt="This is me"></img>
             </div> */}
             <div class="navbar-name">
-                <strong>Marianna Polak</strong>
+                <h3>Marianna Polak</h3>
             </div>
             <div class="navlink-container">
                 <NavLink
