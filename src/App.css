@@ -12,10 +12,9 @@
     --secondary-color: #7fa6c1;
     --standard-white: #ffffff;
     --standard-light-grey: #01065396;
-    --standard-dark-blue: #010753;
-    --color-muted: #6c757d;
-    --color-accent: #f2b632;
-    --standard-background: #000a6607;
+    --standard-dark-blue: #0087bd;
+    --standard-background: #000a6625;
+    --standard-dark-background: #000000e1;
 }
 
 h1,
@@ -29,6 +28,7 @@ p,
 span,
 div {
     font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
 }
 
 body {
@@ -53,25 +53,6 @@ a {
     margin: 1rem 0 0 0;
 }
 
-/*MAIN-STYLING*/
-.main-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-    background-color: var(--standard-dark-blue);
-}
-
-.main-title {
-    font-size: var(--font-xlarge);
-    color: var(--standard-white);
-}
-
-.main-biography-container {
-    display: flex;
-}
-
 /* NAVBAR STYLING */
 .navbar-main {
     display: flex;
@@ -83,7 +64,7 @@ a {
 }
 
 .navbar-name {
-    font-size: var(--font-large);
+    font-size: var(--font-xmedium);
     text-transform: uppercase;
     text-decoration-style: solid;
     color: var(--standard-white);

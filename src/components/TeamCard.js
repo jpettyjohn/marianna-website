@@ -11,16 +11,18 @@ const TeamCard = ({ member }) => {
                     <div className="team-card-text">
                         {" "}
                         <h2 className="team-name">{item.title}</h2>
-                        <p className="team-occupation">{item.occupation}</p>
+                        {item.occupation && (
+                            <p className="team-occupation">
+                                {item.opccupation}
+                            </p>
+                        )}
                         <p className="team-content">{item.content}</p>
                         <div className="team-additional">
                             {item.email && (
-                                <p className="team-link">Email: {item.email}</p>
+                                <p className="team-link">{item.email}</p>
                             )}
                             {item.linkedin && (
-                                <p className="team-link">
-                                    LinkedIn: {item.linkedin}
-                                </p>
+                                <p className="team-link">{item.linkedin}</p>
                             )}
                             {item.website && (
                                 <p className="team-link">{item.website}</p>

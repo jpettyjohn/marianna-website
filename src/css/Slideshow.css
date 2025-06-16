@@ -1,0 +1,43 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 50vw;
+    height: 45vh;
+    margin: 4rem auto 4rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 0rem;
+}
+
+.arrow-btn {
+    background: rgba(255, 255, 255, 0.459);
+    border: 2px solid var(--color-primary); /* use your primary color */
+    color: var(--color-primary);
+    font-size: var(--font-medium);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.arrow-btn:hover {
+    background: var(--color-primary);
+    color: white;
+}

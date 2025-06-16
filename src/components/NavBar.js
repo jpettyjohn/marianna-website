@@ -19,6 +19,13 @@ function Navbar() {
                     Main
                 </NavLink>
                 <NavLink
+                    to="/research"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Research Projects
+                </NavLink>
+                <NavLink
                     to="/publications"
                     className="inactive navlink"
                     activeClassName="active"
@@ -39,34 +46,6 @@ function Navbar() {
                 >
                     Team
                 </NavLink>
-                {/* <NavLink
-                    to="/publications"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Collaborations
-                </NavLink>
-                <NavLink
-                    to="/publications"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Research
-                </NavLink>
-                <NavLink
-                    to="/publications"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Alumni
-                </NavLink>
-                <NavLink
-                    to="/publications"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Lab
-                </NavLink> */}
             </div>
         </div>
     );

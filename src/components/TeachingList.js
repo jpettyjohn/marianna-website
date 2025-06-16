@@ -7,14 +7,16 @@ const TeachingList = ({ teachings }) => {
                 <div className="info-card" key={index}>
                     <h2 className="info-title">{item.title}</h2>
                     <p className="info-content">{item.content}</p>
-                    <a
-                        className="info-link"
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Read more
-                    </a>
+                    {item.link && (
+                        <a
+                            className="info-link"
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read more
+                        </a>
+                    )}
                 </div>
             ))}
         </div>

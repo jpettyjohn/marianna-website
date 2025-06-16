@@ -5,6 +5,9 @@ import saad from "../assets/saad.png";
 import bill from "../assets/bill.png";
 import lamar from "../assets/lamar.png";
 import nancy from "../assets/nancy.png";
+import kartherine from "../assets/katherine.png";
+import jackson from "../assets/jackson.png";
+import joshua from "../assets/joshua.png";
 
 const member = [
     {
@@ -42,15 +45,29 @@ const member = [
     {
         title: "Nancy Kachouh",
         content:
-            "joined the Civil and Environmental Engineering Department at the University of Waterloo as a Phd student in May 2024. Her research is on the topic of the behavior and design of concrete slabs reinforced with glass fiber reinforced polymer (GFRP) bar with special consideration of avoiding punching shear failures of such systems. Her work includes experimental and numerical investigations. Before joining Waterloo, Nancy published seven articles in international journals. She also received the American Concrete Institute (ACI) Middle East Fellowship for the 2019-2020 academic year.",
+            "I joined the Civil and Environmental Engineering Department at the University of Waterloo as a Phd student in May 2024. Her research is on the topic of the behavior and design of concrete slabs reinforced with glass fiber reinforced polymer (GFRP) bar with special consideration of avoiding punching shear failures of such systems. Her work includes experimental and numerical investigations. Before joining Waterloo, Nancy published seven articles in international journals. She also received the American Concrete Institute (ACI) Middle East Fellowship for the 2019-2020 academic year.",
         email: "n2kachou@uwaterloo.ca",
         image: nancy,
+    },
+    {
+        title: "Katherine Liu",
+        content:
+            "I am Katherine Liu, a PhD candidate in Professor Polak’s research group. I amcurrently working on testing and analyzing hybrid (GFRP and steel rebar) reinforced beam-column joints in seismic environments. I used to work on developing a strut-tie method that works for FRP-reinforced deep sections. Outside of the research work, I like anime and video games (RPG). Here is a picture of the frame that will be used to test my beam-column joint specimens.”",
+        image: kartherine,
+    },
+    {
+        title: "Jackson Davey",
+        content:
+            "Jackson is a graduate student undertaking a Master of Applied Science degree in Civil Engineering. His thesis is on the punching shear behaviour of flat concrete slabs with GFRP flexural reinforcement, where he will be running laboratory tests comparing the behaviour of steel and GFRP reinforced slabs, as well as GFRP slabs with and without shear reinforcement. Outside of school, Jackson enjoys exploring music. Some of his favourite bands are Metallica, Headstones, and Judas Priest. Jackson also enjoys fantasy settings such as Star Wars, Warhammer, and the Forgotten Realms, among others.”",
+        email: "jackson.davey@uwaterloo.ca",
+        image: jackson,
     },
     {
         title: "Joshua Ayande",
         content:
             "I am a PhD student in civil and environmental engineering with research interests in Fibre Reinforced Polymers (FRPs), probabilistic modeling of structural behavior, and the structural performance of reinforced concrete systems. My current work focuses on the reliability-based calibration of design formulas in the new Canadian codes for GFRP-reinforced concrete. The goal is to establish rational safety factors to support the safe and efficient use of advanced materials in structural design.”",
         email: "Ayande.joshua@yahoo.com",
+        image: joshua,
     },
 ];
 

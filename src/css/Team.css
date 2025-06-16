@@ -7,51 +7,46 @@
 
 .team-main-container {
     width: 60%;
-    margin: 4vh;
+    margin: 3vh;
 }
 
 .team-list {
     display: grid;
     gap: 1rem;
     padding: 1rem;
-    height: 50%;
 }
 
 .team-card {
     display: grid;
     grid-template-columns: auto 1fr; /* image | content */
-    gap: 0.1rem;
-    height: 50%;
+    gap: 1rem;
 }
 
 .team-card-image {
     padding: 1rem;
-    height: 50%;
 }
 
 .team-card-image img {
-    height: 100%;
-    width: auto;
-    object-fit: cover; /* Optional: makes sure it looks nice */
-    border-radius: 8px; /* Optional: if you want rounded corners */
+    height: 100%; /* or whatever size you want */
+    object-fit: cover;
+    border-radius: 8px;
     border: 1px solid #ccc;
 }
 
 .team-card-text {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    justify-content: flex-start;
+    width: 30%;
 }
 
 .team-name {
-    margin: 0;
     font-size: var(--font-large);
     color: #333;
 }
 
 .team-occupation {
-    margin: 0;
+    margin: auto;
     font-size: var(--font-large);
     font-weight: bold;
 }
@@ -77,4 +72,5 @@
     height: 1px;
     background-color: var(--standard-light-grey);
     margin: 10px 0;
+    width: 50%;
 }

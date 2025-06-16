@@ -14,30 +14,36 @@ Create features only logged in members can use
 
 ## Main Tasks
 
--   Team page
-    Sample student
-    emulate for the rest of the students
-
--   Teaching page
+-   Team page - done
+-   Teaching page - done
     main strutuce - done
     style better
 
-    -   dont like current cards\
+-   Research Projects (This is a big task)
 
--   Theme (Bluish profresional)
+-   Biography page
+    a section in main
+
+-   Beyond work (Garden)
+
+-   Some Hobbies (Travelling, Rex, Skiing, Sailing, Golfing, Tennis)
+
+Slide show with pictures of research
+Mobile version
 
 ## Secondary Tasks
 
--   Color Scheme - bluish, not green
+-   Main page add team undetailed section\
+-   Theme (Bluish profresional)
 -   Link after text in publicaton line not as a hyper link (publications)
 
 ## Long Term
 
 -   Make mobile scaling
-
 -   ADD Publication feature
 -   Update Publication feature
 -   Setup backend for login
+-   Come up with multiple color/designs to present
 
 ## Misc
 
@@ -57,3 +63,11 @@ theme suggestions
 https://www.free-css.com/free-css-templates/page296/listrace -- everything (or mostly everything) is on main page and navbar brings you to those sections
 https://www.free-css.com/free-css-templates/page295/esigned -- transparent navbar with respective image
 https://thepettyjohnteam.com/services/ -- taking about spacing of socials
+
+## Amount of hours
+
+-   5 hours for team
+-   5 hours for teaching
+-   8 hours for publications
+-   4 hours for start of main
+-   4 hours for styling and corrections

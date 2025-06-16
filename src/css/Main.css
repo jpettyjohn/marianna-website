@@ -1,0 +1,102 @@
+/* padding: top right bottom left; * /
+
+
+/*MAIN-STYLING*/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.main-title {
+    font-size: var(--font-xlarge);
+    font-weight: 600;
+    color: var(--standard-white);
+    padding: 0 0 0 0;
+}
+
+.main-slideshow-container {
+    background-color: var(--standard-dark-background);
+    padding: 1rem 0 3rem 0;
+    width: 100%;
+}
+
+.main-biography-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--standard-background);
+    padding: 1rem 5rem 1rem 10rem;
+    height: 80vh;
+    align-items: center;
+    gap: 5rem;
+}
+
+.main-biography-card {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.main-biography-img {
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin: 0 4rem 0 10rem;
+}
+
+.main-biography-content {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-xmedium);
+    width: 70%;
+}
+
+.main-biography-content p {
+    text-indent: 2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-team-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--standard-background);
+    padding: 1rem;
+    height: auto;
+}
+
+.main-team-card-container {
+    display: flex;
+}
+
+.main-team-card {
+    display: flex;
+    background-color: var(--standard-white);
+    color: var(--primary-text-color);
+    margin: 0 2rem 0.5rem 2rem;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1rem;
+    border: 2px solid var(--color-primary);
+}
+
+.main-team-card-title {
+    font-size: var(--font-large);
+    margin: 0;
+}
+
+.main-team-button {
+    padding: 2rem;
+}
+
+.main-team-card-img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.main-team-title {
+    padding-left: 2rem;
+    color: var(--standard-white);
+    font-size: var(--font-xlarge);
+}
