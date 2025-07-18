@@ -8,6 +8,7 @@ import nancy from "../assets/nancy.png";
 import kartherine from "../assets/katherine.png";
 import jackson from "../assets/jackson.png";
 import joshua from "../assets/joshua.png";
+import zahra from "../assets/zahra.png";
 
 const member = [
     {
@@ -68,6 +69,13 @@ const member = [
             "I am a PhD student in civil and environmental engineering with research interests in Fibre Reinforced Polymers (FRPs), probabilistic modeling of structural behavior, and the structural performance of reinforced concrete systems. My current work focuses on the reliability-based calibration of design formulas in the new Canadian codes for GFRP-reinforced concrete. The goal is to establish rational safety factors to support the safe and efficient use of advanced materials in structural design.”",
         email: "Ayande.joshua@yahoo.com",
         image: joshua,
+    },
+    {
+        title: "Zahra (Leila) Miri",
+        content:
+            "Zahra (Leila) Miri is a Ph.D. candidate in Civil and Environmental Engineering at the University of Waterloo, co-supervised by Professors Marianna Polak and Hassan Baaj. Her research focuses on 3D concrete printing, specifically the mechanical characterization of interlayer bonding using experimental testing and finite element modeling. She also has experience in non-destructive ultrasonic testing and digital image correlation for studying interlayer behavior. Leila is passionate about teaching and mentoring students. Beyond academia, she enjoys cooking, photography, and working with clay on the pottery wheel.”",
+        email: "Ayande.joshua@yahoo.com",
+        image: zahra,
     },
 ];
 
