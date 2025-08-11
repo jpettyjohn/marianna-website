@@ -1,21 +1,7 @@
 import { useState } from "react";
 import "../css/Slideshow.css";
-import ajiboye from "../assets/ajiboye.png";
-import saad from "../assets/saad.png";
-import bill from "../assets/bill.png";
-import lamar from "../assets/lamar.png";
-import nancy from "../assets/nancy.png";
 
-export default function Slideshow() {
-    const images = [
-        nancy,
-        saad,
-        bill,
-        lamar,
-        ajiboye,
-        // Add more photos
-    ];
-
+export default function Slideshow({ images = [] }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {

@@ -1,14 +1,14 @@
 import "../css/Team.css";
 import TeamCard from "../components/TeamCard";
-import ajiboye from "../assets/ajiboye.png";
-import saad from "../assets/saad.png";
-import bill from "../assets/bill.png";
-import lamar from "../assets/lamar.png";
-import nancy from "../assets/nancy.png";
-import kartherine from "../assets/katherine.png";
-import jackson from "../assets/jackson.png";
-import joshua from "../assets/joshua.png";
-import zahra from "../assets/zahra.png";
+import ajiboye from "../assets/team/ajiboye.png";
+import saad from "../assets/team/saad.png";
+import bill from "../assets/team/bill.png";
+import lamar from "../assets/team/lamar.png";
+import nancy from "../assets/team/nancy.png";
+import kartherine from "../assets/team/katherine.png";
+import jackson from "../assets/team/jackson.png";
+import joshua from "../assets/team/joshua.png";
+import zahra from "../assets/team/zahra.png";
 
 const member = [
     {
@@ -22,7 +22,7 @@ const member = [
     {
         title: "Saad Saad",
         content:
-            "I joined Professor Polak’s research team as a Postdoctoral Fellow in June 2024. I amcurrently investigating the behavior of Glass Fiber Reinforced Polymer (GFRP) reinforcedconcrete frame joints subject to opening and closing moments using finite elementmodelling with the objective of proposing relevant design and detailing recommendations. During my PhD research, I studied the effects of climate change on concrete bridge decks with particular interest in thermal effects and thermal loads.",
+            "I joined Professor Polak’s research team as a Postdoctoral Fellow in June 2024. I am currently investigating the behavior of Glass Fiber Reinforced Polymer (GFRP) reinforcedconcrete frame joints subject to opening and closing moments using finite elementmodelling with the objective of proposing relevant design and detailing recommendations. During my PhD research, I studied the effects of climate change on concrete bridge decks with particular interest in thermal effects and thermal loads.",
         email: "",
         linkedin: "https://www.linkedin.com/in/saad-saad-531521179/",
         website: "https://orcid.org/0009-0009-4906-8771",

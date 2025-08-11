@@ -80,7 +80,7 @@ a {
     font-style: normal;
     text-decoration: none;
     color: var(--standard-white);
-    font-size: var(--font-xmedium);
+    font-size: var(--font-medium);
     display: flex;
     align-items: center;
     height: 100%;

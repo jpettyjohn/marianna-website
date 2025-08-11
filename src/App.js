@@ -4,6 +4,7 @@ import ResearchProjects from "./pages/ResearchProjects";
 import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
 import Team from "./pages/Team";
+import Hobbies from "./pages/Hobbies";
 import Main from "./pages/Main";
 import Navbar from "./components/NavBar";
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
                             path="/research"
                             element={<ResearchProjects />}
                         />
+                        <Route path="/hobbies" element={<Hobbies />} />
                     </Routes>
                 </main>
             </div>

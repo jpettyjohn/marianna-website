@@ -87,14 +87,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center; /* centers the rows */
+    max-width: 100%; /* makes sure it doesn’t overflow */
 }
 
 .main-team-card {
     display: flex;
     background-color: var(--standard-white);
     color: var(--primary-text-color);
-    margin: 0 2rem 0.5rem 2rem;
-    width: 20vw;
+    margin: 0 2rem 0.5rem 0rem;
+    width: 15vw;
     height: 30vh;
     border-radius: 1rem;
     border: 2px solid var(--color-primary);
@@ -110,12 +112,28 @@
 }
 
 .main-team-card-img {
-    border-radius: 0.5rem;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 .main-team-title {
     padding-left: 2rem;
     color: var(--standard-white);
     font-size: var(--font-xlarge);
+}
+
+.main-aboutme-content {
+    padding-left: 2rem;
+}
+
+.main-aboutme-content p {
+    color: var(--standard-white);
+    padding-left: 1rem;
+}
+
+.main-aboutme-title {
+    color: var(--standard-white);
+    font-size: var(--font-large);
 }
