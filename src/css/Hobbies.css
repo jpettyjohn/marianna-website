@@ -81,3 +81,15 @@
     transition: background-image 0.3s ease;
     z-index: 1;
 }
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+}

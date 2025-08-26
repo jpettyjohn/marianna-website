@@ -38,7 +38,7 @@ function Hobbies() {
                             alt={`Hobby ${index + 1}`}
                             className="hobby-img"
                             onMouseEnter={() => setBgImage(src)}
-                            onMouseLeave={() => setBgImage(garden[1])}
+                            onMouseLeave={() => setBgImage(src)}
                         />
                     ))}
                 </Masonry>

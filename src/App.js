@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ResearchProjects from "./pages/ResearchProjects";
+import Materials from "./pages/Materials";
+import Structures from "./pages/Structures";
 import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
 import Team from "./pages/Team";
@@ -24,10 +25,8 @@ function App() {
                         />
                         <Route path="/teaching" element={<Teaching />} />
                         <Route path="/team" element={<Team />} />
-                        <Route
-                            path="/research"
-                            element={<ResearchProjects />}
-                        />
+                        <Route path="/materials" element={<Materials />} />
+                        <Route path="/structures" element={<Structures />} />
                         <Route path="/hobbies" element={<Hobbies />} />
                     </Routes>
                 </main>

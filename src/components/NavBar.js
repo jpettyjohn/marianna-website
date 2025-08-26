@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
 
 function Navbar() {
     return (
@@ -18,13 +19,20 @@ function Navbar() {
                 >
                     Main
                 </NavLink>
-                <NavLink
-                    to="/research"
-                    className="inactive navlink"
-                    activeClassName="active"
-                >
-                    Research Projects
-                </NavLink>
+                <Dropdown className="custom-dropdown">
+                    <Dropdown.Toggle variant="dark" className="navlink">
+                        Research
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                        <Dropdown.Item as={NavLink} to="/structures">
+                            Structures
+                        </Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/materials">
+                            Materials
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
                 <NavLink
                     to="/publications"
                     className="inactive navlink"

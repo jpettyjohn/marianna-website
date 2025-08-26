@@ -1,0 +1,106 @@
+.materials-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.materials-main-container {
+    width: 70%;
+    margin: 3vh;
+}
+
+.materials-main-content {
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    font-size: var(--font-xmedium);
+}
+
+/* Parent wrapper holding both sections */
+.materials-GRFP-main {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    gap: 1rem;
+    justify-content: flex-start; /* left-align when wrapping */
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+/* Each section card (flex children) */
+.materials-GFRP,
+.materials-non-destructive {
+    flex: 1 1 45%; /* grow/shrink, 45% width default */
+    min-width: 300px; /* ensures wrap if screen is narrow */
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+
+    /* Use grid only for content inside the card */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.5rem;
+
+    height: auto; /* only as tall as content */
+}
+
+.materials-durability {
+    flex: 1 1 45%;
+    min-width: 300px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px); /* fixed-width columns */
+    justify-content: center; /* center the grid as a whole */
+    gap: 0.5rem;
+    height: auto;
+}
+
+/* Target the second image container inside .materials-durability */
+.materials-durability .image-container:nth-child(3) {
+    grid-column: span 2; /* makes it span 2 columns instead of 1 */
+}
+
+/* Force text content to span full width inside the grid */
+.materials-content {
+    grid-column: 1 / -1;
+}
+
+/* Image containers */
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.GRFP-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Labels overlay bottom-left of image */
+.label {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* Optional: make always stack vertically on small screens */
+@media (max-width: 768px) {
+    .materials-GFRP,
+    .materials-non-destructive {
+        flex: 1 1 100%; /* take full width and stack */
+    }
+}

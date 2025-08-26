@@ -1,6 +1,7 @@
 :root {
     --font-base: 1rem; /* Assuming 1rem = 16px */
     --font-small: calc(var(--font-base) / 1.618); /* ≈ 0.618rem */
+    --font-xsmall: calc((var(--font-medium) + var(--font-small)) / 2);
     --font-medium: var(--font-base); /* 1rem */
     --font-xmedium: calc((var(--font-medium) + var(--font-large)) / 2);
     --font-large: calc(var(--font-base) * 1.618); /* ≈ 1.618rem */
@@ -51,6 +52,14 @@ a {
 .title {
     font-size: var(--font-xlarge);
     margin: 1rem 0 0 0;
+    color: var(--standard-dark-background);
+}
+
+.secondary-title {
+    font-size: var(--font-large);
+    margin: 0 0 0 0;
+    text-align: center;
+    color: var(--standard-dark-background);
 }
 
 /* NAVBAR STYLING */
@@ -84,7 +93,7 @@ a {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 0.4em;
+    padding: 0 0.5em;
     transition: background 0.3s ease-in-out;
 }
 
@@ -92,4 +101,57 @@ a {
     color: var(--standard-white);
     background: var(--secondary-color);
     cursor: pointer;
+}
+
+/* custom.css */
+.custom-dropdown .dropdown-menu {
+    background-color: var(--standard-dark-blue); /* your color */
+    border-radius: 0;
+}
+
+.custom-dropdown .dropdown-item {
+    color: white; /* text color */
+}
+
+.custom-dropdown .dropdown-toggle {
+    background-color: var(--standard-dark-blue);
+    border: 0;
+    border-radius: 0;
+}
+
+.custom-dropdown .dropdown-toggle:hover {
+    background: var(--secondary-color);
+}
+.custom-dropdown .dropdown-item:hover {
+    background: var(--secondary-color); /* hover color */
+}
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .navbar-main {
+        height: 60px; /* fixed height for consistency */
+        padding: 0 1rem;
+    }
+    .navbar-name {
+        font-size: 1.2rem;
+    }
+    .navlink {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .navbar-name {
+        font-size: var(--font-xsmall);
+    }
+    .navlink {
+        font-size: var(--font-small);
+        padding: 0.3rem 0.5rem;
+    }
 }

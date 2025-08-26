@@ -1,0 +1,113 @@
+.structures-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.structures-main-container {
+    width: 65%;
+    margin: 3vh;
+}
+
+.structures-main-content {
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0 1rem 0;
+    font-size: var(--font-xmedium);
+}
+
+.structures-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping if needed */
+    align-items: flex-start; /* don’t stretch children vertically */
+    gap: 1rem;
+}
+
+.structures-border,
+.structures-border-alt {
+    max-height: 80vh; /* box can grow up to full viewport height */
+    overflow-y: auto; /* scroll only vertically when too tall */
+    overflow-x: hidden; /* prevent horizontal scroll unless needed */
+}
+
+.structures-border {
+    flex: 1 1 calc(50% - 1rem); /* take ~half width, minus gap */
+    max-width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+}
+
+.structures-border-alt {
+    flex: 1 1 calc(50% - 1rem); /* take ~half width, minus gap */
+    max-width: calc(50% - 1rem);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* always 2 per row */
+
+    gap: 0.4rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+}
+
+.structures-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.structures-img {
+    display: block;
+    width: 100%;
+    height: auto; /* keeps correct aspect ratio */
+    object-fit: cover; /* crop to fit if needed */
+}
+
+.label {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    pointer-events: none; /* lets clicks pass through */
+}
+
+/* Chrome, Edge, Safari */
+.structures-border::-webkit-scrollbar,
+.structures-border-alt::-webkit-scrollbar {
+    width: 8px; /* scrollbar width */
+}
+
+.structures-border::-webkit-scrollbar-track,
+.structures-border-alt::-webkit-scrollbar-track {
+    background: #f1f1f1; /* track background */
+    border-radius: 8px;
+}
+
+.structures-border::-webkit-scrollbar-thumb,
+.structures-border-alt::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4); /* thumb color */
+    border-radius: 8px;
+}
+
+.structures-border::-webkit-scrollbar-thumb:hover,
+.structures-border-alt::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6); /* darker on hover */
+}
+
+/* Firefox */
+.structures-border,
+.structures-border-alt {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.4) #f1f1f1;
+}

@@ -41,3 +41,24 @@
     background: var(--color-primary);
     color: white;
 }
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .slideshow {
+        position: relative;
+        width: 100%;
+        max-width: 80vw;
+        height: 50vh;
+        margin: 2rem auto 2rem auto;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+}

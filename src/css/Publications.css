@@ -55,3 +55,15 @@
     font-size: var(--font-medium); /* Makes the arrow smaller */
     margin-left: 3px; /* Adds spacing between year and arrow */
 }
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+}

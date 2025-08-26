@@ -1,7 +1,4 @@
-/* padding: top right bottom left; * /
-
-
-/*MAIN-STYLING*/
+/* MAIN STYLING */
 .main {
     display: flex;
     flex-direction: column;
@@ -43,7 +40,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--standard-background);
-    padding: 5rem 5rem 0rem 5rem;
+    padding: 3rem 3rem 0rem 3rem;
     height: 90vh;
     align-items: center;
     text-align: center;
@@ -52,7 +49,7 @@
 
 .main-biography-card {
     display: flex;
-    width: 45%;
+    width: 55%;
     height: auto;
 }
 
@@ -88,18 +85,21 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center; /* centers the rows */
-    max-width: 100%; /* makes sure it doesn’t overflow */
+    max-width: 100%; /* prevents overflow */
 }
 
 .main-team-card {
     display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
     background-color: var(--standard-white);
     color: var(--primary-text-color);
-    margin: 0 2rem 0.5rem 0rem;
-    width: 15vw;
-    height: 30vh;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    width: clamp(150px, 15vw, 300px); /* responsive width */
+    height: auto;
     border-radius: 1rem;
     border: 2px solid var(--color-primary);
+    overflow: hidden; /* prevent image overflow */
 }
 
 .main-team-card-title {
@@ -112,10 +112,9 @@
 }
 
 .main-team-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* keeps aspect ratio without cropping */
 }
 
 .main-team-title {
@@ -125,15 +124,103 @@
 }
 
 .main-aboutme-content {
-    padding-left: 2rem;
+    padding-left: 0rem;
 }
 
 .main-aboutme-content p {
     color: var(--standard-white);
-    padding-left: 1rem;
+    padding-left: 0rem;
 }
 
 .main-aboutme-title {
     color: var(--standard-white);
-    font-size: var(--font-large);
+    font-size: var(--font-xlarge);
+    margin-bottom: 1rem;
+}
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .main {
+        text-align: center;
+    }
+    .main-slideshow-card {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .main-slideshow-content {
+        width: 100%;
+        padding: 1rem 0 0 0;
+    }
+
+    .main-biography-container {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .main-biography-card {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-team-card {
+        width: 40vw;
+    }
+
+    .main-title {
+        font-size: var(--font-large);
+    }
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .main {
+        text-align: center;
+    }
+    .main-title {
+        font-size: var(--font-medium);
+        padding: 0;
+    }
+
+    .main-slideshow-container {
+        padding: 0.5rem;
+    }
+
+    .main-slideshow-content {
+        font-size: var(--font-medium);
+    }
+
+    .main-biography-card {
+        width: 100%;
+    }
+
+    .main-biography-content {
+        font-size: var(--font-medium);
+    }
+
+    .main-biography-img {
+        width: 50%; /* scales with container width */
+        height: auto;
+        border-radius: 50%;
+        border: 1px solid #333;
+    }
+
+    .main-team-card {
+        width: 32vw;
+    }
+
+    .main-team-title {
+        padding-left: 1rem;
+        font-size: var(--font-large);
+    }
+
+    .main-aboutme-content {
+        padding-left: 1rem;
+    }
 }
