@@ -8,6 +8,7 @@ import Team from "./pages/Team";
 import Hobbies from "./pages/Hobbies";
 import Main from "./pages/Main";
 import Navbar from "./components/NavBar";
+import Titles from "./pages/Titles";
 import "./App.css";
 //import "./css/App.scss";
 
@@ -28,6 +29,7 @@ function App() {
                         <Route path="/materials" element={<Materials />} />
                         <Route path="/structures" element={<Structures />} />
                         <Route path="/hobbies" element={<Hobbies />} />
+                        <Route path="/titles" element={<Titles />} />
                     </Routes>
                 </main>
             </div>

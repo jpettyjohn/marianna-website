@@ -4,19 +4,24 @@
     flex-direction: column;
     justify-content: flex-start;
     height: auto;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .main-title {
     font-size: var(--font-xlarge);
     font-weight: 600;
     color: var(--standard-white);
-    padding: 0 0 0 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .main-slideshow-container {
     background-color: var(--standard-dark-background);
     padding: 1rem;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .main-slideshow-card {
@@ -24,82 +29,109 @@
     flex-direction: row;
     padding: 0 1rem 0 3rem;
     align-items: center;
+    gap: 2rem;
+    box-sizing: border-box;
 }
 
 .main-slideshow-content {
     font-size: var(--font-xmedium);
-    padding: 0 0 0 2rem;
-    width: 25%;
+    width: 40%;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .main-slideshow-content p {
     color: var(--standard-white);
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .main-biography-container {
     display: flex;
     flex-direction: column;
     background-color: var(--standard-background);
-    padding: 3rem 3rem 0rem 3rem;
-    height: 90vh;
+    padding: 10rem 3rem 5rem 3rem;
+    min-height: 95vh;
     align-items: center;
     text-align: center;
     gap: 3rem;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .main-biography-card {
     display: flex;
     width: 55%;
     height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .main-biography-img {
-    height: 50%;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 1px solid #333;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .main-biography-content {
     display: flex;
     font-size: var(--font-xmedium);
     width: 100%;
+    box-sizing: border-box;
 }
 
 .main-biography-content p {
     text-indent: 2em;
     width: 100%;
     box-sizing: border-box;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .main-team-container {
     display: flex;
     flex-direction: column;
     background-color: var(--standard-background);
-    padding: 1rem;
+    padding: 2rem 1rem;
     height: auto;
     font-size: var(--font-xmedium);
+    box-sizing: border-box;
 }
 
 .main-team-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center; /* centers the rows */
-    max-width: 100%; /* prevents overflow */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .main-team-card {
     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center; /* center vertically */
+    justify-content: center;
+    align-items: center;
     background-color: var(--standard-white);
     color: var(--primary-text-color);
-    margin: 0 0.5rem 0.5rem 0.5rem;
-    width: clamp(150px, 15vw, 300px); /* responsive width */
-    height: auto;
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1;
     border-radius: 1rem;
     border: 2px solid var(--color-primary);
-    overflow: hidden; /* prevent image overflow */
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.main-team-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .main-team-card-title {
@@ -109,82 +141,180 @@
 
 .main-team-button {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-team-card-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* keeps aspect ratio without cropping */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.main-team-card:hover .main-team-card-img {
+    transform: scale(1.05);
 }
 
 .main-team-title {
-    padding-left: 2rem;
+    padding: 0 2rem;
     color: var(--standard-white);
     font-size: var(--font-xlarge);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .main-aboutme-content {
-    padding-left: 0rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .main-aboutme-content p {
     color: var(--standard-white);
-    padding-left: 0rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .main-aboutme-title {
     color: var(--standard-white);
     font-size: var(--font-xlarge);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* ===================== */
 /* RESPONSIVE BREAKPOINTS */
 /* ===================== */
 
+/* Large desktop view (≥ 1200px) */
+@media screen and (min-width: 1200px) {
+    .main-slideshow-card {
+        padding: 0 2rem 0 4rem;
+    }
+
+    .main-biography-container {
+        padding: 12rem 4rem 6rem 4rem;
+    }
+
+    .main-biography-card {
+        width: 50%;
+    }
+}
+
+/* Desktop view (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+    .main-slideshow-content {
+        width: 45%;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet view (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    .main-slideshow-card {
+        padding: 0 1rem 0 2rem;
+    }
+
+    .main-biography-container {
+        padding: 8rem 2rem 4rem 2rem;
+    }
+
+    .main-biography-card {
+        width: 70%;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Tablet view (≤ 768px) */
 @media screen and (max-width: 768px) {
-    .main {
-        text-align: center;
-    }
     .main-slideshow-card {
         flex-direction: column;
-        padding: 0;
+        padding: 0 1rem;
+        gap: 2rem;
         text-align: center;
     }
 
     .main-slideshow-content {
         width: 100%;
-        padding: 1rem 0 0 0;
+        padding: 0;
     }
 
     .main-biography-container {
-        padding: 2rem 1rem;
-        height: auto;
+        padding: 6rem 1.5rem 3rem 1.5rem;
+        gap: 2rem;
     }
 
     .main-biography-card {
         width: 90%;
-        flex-direction: column;
-        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .main-biography-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-team-container {
+        padding: 2rem 1rem;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0.5rem;
     }
 
     .main-team-card {
-        width: 40vw;
+        max-width: 200px;
     }
 
     .main-title {
         font-size: var(--font-large);
     }
+
+    .main-team-title,
+    .main-aboutme-title {
+        font-size: var(--font-large);
+        padding: 0 1rem;
+    }
+}
+
+/* Mobile landscape view (≤ 640px) */
+@media screen and (max-width: 640px) {
+    .main-biography-container {
+        padding: 4rem 1rem 2rem 1rem;
+    }
+
+    .main-biography-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .main-slideshow-container {
+        padding: 0.5rem;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .main-team-card {
+        max-width: 150px;
+    }
 }
 
 /* Mobile view (≤ 480px) */
 @media screen and (max-width: 480px) {
-    .main {
-        text-align: center;
-    }
     .main-title {
-        font-size: var(--font-medium);
+        font-size: var(--font-large);
         padding: 0;
     }
 
@@ -192,12 +322,23 @@
         padding: 0.5rem;
     }
 
+    .main-slideshow-card {
+        padding: 0 0.5rem;
+        gap: 1.5rem;
+    }
+
     .main-slideshow-content {
         font-size: var(--font-medium);
     }
 
+    .main-biography-container {
+        padding: 3rem 1rem 2rem 1rem;
+        gap: 1.5rem;
+    }
+
     .main-biography-card {
         width: 100%;
+        gap: 1rem;
     }
 
     .main-biography-content {
@@ -205,22 +346,65 @@
     }
 
     .main-biography-img {
-        width: 50%; /* scales with container width */
-        height: auto;
-        border-radius: 50%;
-        border: 1px solid #333;
+        width: 180px;
+        height: 180px;
+    }
+
+    .main-team-container {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.25rem;
     }
 
     .main-team-card {
-        width: 32vw;
+        max-width: 140px;
     }
 
-    .main-team-title {
-        padding-left: 1rem;
+    .main-team-title,
+    .main-aboutme-title {
         font-size: var(--font-large);
+        padding: 0 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .main-aboutme-content {
-        padding-left: 1rem;
+        padding: 0 1rem;
+    }
+
+    .main-team-button {
+        padding: 1rem;
+    }
+}
+
+/* Small mobile view (≤ 360px) */
+@media screen and (max-width: 360px) {
+    .main-biography-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-team-card-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem;
+    }
+
+    .main-team-card {
+        max-width: 120px;
+    }
+
+    .main-slideshow-content,
+    .main-biography-content {
+        font-size: var(--font-small);
+    }
+
+    .main-title,
+    .main-team-title,
+    .main-aboutme-title {
+        font-size: var(--font-medium);
     }
 }

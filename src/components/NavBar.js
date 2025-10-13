@@ -61,6 +61,13 @@ function Navbar() {
                 >
                     Hobbies
                 </NavLink>
+                <NavLink
+                    to="/titles"
+                    className="inactive navlink"
+                    activeClassName="active"
+                >
+                    Titles
+                </NavLink>
             </div>
         </div>
     );
