@@ -1,0 +1,145 @@
+/* TITLES PAGE STYLING */
+
+.titles-main {
+    min-height: 100vh;
+    background-color: var(--standard-background);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+.titles-main-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.titles-main-container .main-slideshow-container {
+    background-color: var(--standard-background);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.titles-main-container .main-aboutme-content {
+    padding: 0;
+    text-align: left;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.titles-main-container .main-aboutme-title {
+    color: var(--primary-color);
+    font-size: var(--font-large);
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--standard-light-grey);
+    text-align: left;
+}
+
+.titles-main-container .main-aboutme-title:first-child {
+    margin-top: 0;
+}
+
+.titles-main-container .main-aboutme-content p {
+    color: var(--primary-text-color);
+    font-size: var(--font-medium);
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+    text-indent: 0;
+}
+
+/* Style for better readability of structured content */
+.titles-main-container .main-aboutme-content p strong,
+.titles-main-container .main-aboutme-content p b {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+/* Tablet view (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    .titles-main {
+        padding: 1.5rem 0;
+    }
+
+    .titles-main-container {
+        padding: 0 1.5rem;
+    }
+
+    .titles-main-container .main-slideshow-container {
+        padding: 2rem;
+    }
+}
+
+/* Tablet view (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .titles-main {
+        padding: 1rem 0;
+    }
+
+    .titles-main-container {
+        padding: 0 1rem;
+    }
+
+    .titles-main-container .main-slideshow-container {
+        padding: 1.5rem;
+        border-radius: 4px;
+    }
+
+    .titles-main-container .main-aboutme-title {
+        font-size: var(--font-medium);
+        margin: 1.5rem 0 0.8rem 0;
+    }
+
+    .titles-main-container .main-aboutme-content p {
+        font-size: var(--font-small);
+        line-height: 1.6;
+        margin: 0 0 1.2rem 0;
+    }
+}
+
+/* Mobile view (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .titles-main {
+        padding: 0.5rem 0;
+    }
+
+    .titles-main-container {
+        padding: 0 0.5rem;
+    }
+
+    .titles-main-container .main-slideshow-container {
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .titles-main-container .main-aboutme-title {
+        font-size: var(--font-small);
+        margin: 1.2rem 0 0.6rem 0;
+        padding-bottom: 0.3rem;
+    }
+
+    .titles-main-container .main-aboutme-content p {
+        font-size: var(--font-xsmall);
+        line-height: 1.5;
+        margin: 0 0 1rem 0;
+    }
+}
+
+/* Small mobile view (≤ 360px) */
+@media screen and (max-width: 360px) {
+    .titles-main-container .main-aboutme-title {
+        font-size: var(--font-xsmall);
+    }
+
+    .titles-main-container .main-aboutme-content p {
+        font-size: calc(var(--font-xsmall) * 0.9);
+    }
+}

@@ -8,9 +8,7 @@ function Navbar() {
             {/* <div className='navbar-logo-container'>
                 <img class="navbar-logo" src={Image} alt="This is me"></img>
             </div> */}
-            <div class="navbar-name">
-                <h3>Marianna Polak</h3>
-            </div>
+            <h3 class="navbar-name">Marianna Polak</h3>
             <div class="navlink-container">
                 <NavLink
                     to="/"

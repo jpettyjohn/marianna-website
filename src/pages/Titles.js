@@ -1,4 +1,3 @@
-import PublicationList from "../components/PublicationList";
 import "../css/Titles.css";
 
 function Titles() {

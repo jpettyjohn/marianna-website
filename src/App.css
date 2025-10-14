@@ -107,6 +107,7 @@ a {
 .custom-dropdown .dropdown-menu {
     background-color: var(--standard-dark-blue); /* your color */
     border-radius: 0;
+    font-size: var(--font-xmedium);
 }
 
 .custom-dropdown .dropdown-item {
@@ -137,7 +138,7 @@ a {
         padding: 0 1rem;
     }
     .navbar-name {
-        font-size: 1.2rem;
+        font-size: var(--font-xsmall);
     }
     .navlink {
         font-size: 1rem;
@@ -147,11 +148,15 @@ a {
 
 /* Mobile view (≤ 480px) */
 @media screen and (max-width: 480px) {
+    .custom-dropdown .dropdown-item {
+        font-size: var(--font-medium);
+    }
     .navbar-name {
-        font-size: var(--font-xsmall);
+        font-size: var(--font-small);
+        padding: 0.1rem;
     }
     .navlink {
-        font-size: var(--font-small);
+        font-size: var(--font-xsmall);
         padding: 0.3rem 0.5rem;
     }
 }

@@ -26,7 +26,7 @@
     z-index: 2; /* keep content above background */
 }
 
-.title {
+.title-garden {
     text-align: center;
     color: var(--standard-white);
     margin-bottom: 10px;
@@ -37,7 +37,7 @@
     height: 2px;
     background: #ccc;
     margin: 10px auto 30px;
-    width: 80px;
+    width: 50%;
 }
 
 /* Masonry layout */
@@ -55,6 +55,7 @@
 /* Image styling */
 .hobby-img {
     width: 100%;
+    height: 400px; /* Fixed height for consistent sizing */
     display: block;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -62,6 +63,8 @@
     transition: transform 0.2s ease;
     position: relative;
     z-index: 3; /* stay above blur */
+    object-fit: cover; /* Maintains aspect ratio while filling the container */
+    object-position: center; /* Centers the image within the container */
 }
 
 .hobby-img:hover {
@@ -82,14 +85,27 @@
     z-index: 1;
 }
 
+/* Section spacing and separation */
+.hobbies-main + .hobbies-main {
+    margin-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
 /* ===================== */
 /* RESPONSIVE BREAKPOINTS */
 /* ===================== */
 
 /* Tablet view (≤ 768px) */
 @media screen and (max-width: 768px) {
+    .hobby-img {
+        height: 200px; /* Slightly smaller height for tablets */
+    }
 }
 
 /* Mobile view (≤ 480px) */
 @media screen and (max-width: 480px) {
+    .hobby-img {
+        height: 180px; /* Smaller height for mobile devices */
+    }
 }
