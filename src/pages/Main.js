@@ -79,7 +79,7 @@ function Main() {
             </div>
             <div className="main-team-container">
                 <h1 className="main-team-title">Our Team</h1>
-                <p style={{ textIndent: "2em" }}>
+                <p style={{ textAlign: "center", margin: "0 auto" }}>
                     We have an active research team, sometimes called Team-MAP.
                     Several graduate students are busy solving infrastructure
                     problems!
