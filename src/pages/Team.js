@@ -74,7 +74,7 @@ const member = [
         title: "Zahra (Leila) Miri",
         content:
             "Zahra (Leila) Miri is a Ph.D. candidate in Civil and Environmental Engineering at the University of Waterloo, co-supervised by Professors Marianna Polak and Hassan Baaj. Her research focuses on 3D concrete printing, specifically the mechanical characterization of interlayer bonding using experimental testing and finite element modeling. She also has experience in non-destructive ultrasonic testing and digital image correlation for studying interlayer behavior. Leila is passionate about teaching and mentoring students. Beyond academia, she enjoys cooking, photography, and working with clay on the pottery wheel.”",
-        email: "",
+        email: "Ayande.joshua@yahoo.com",
         image: zahra,
     },
 ];
